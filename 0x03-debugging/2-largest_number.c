@@ -1,24 +1,29 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * main - program that computes and prints the sum of all
- * the multiples of 3 or 5 below 1024
- * Return: int.
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
  */
 
-int main(void)
+int largest_number(int a, int b, int c)
 {
-	int multi = 0;
-	int res = 0;
+	int largest;
 
-	while (multi < 1024)
+	if (a >= b && a >= c)
 	{
-		if (multi % 3 == 0 || multi % 5 == 0)
-		{
-			res += multi;
-		}
-		multi += 1;
+		largest = a;
 	}
-	printf("%d\n", res);
-	return (0);
+	else if (b >= a && b >= c)
+	{
+		largest = b;
+	}
+	else
+	{
+		largest = c;
+	}
+
+	return (largest);
 }
