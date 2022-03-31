@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * getNumSqr - function that gets de num of sqroot
+ * getNumSqr - function that gets the num of sqroot
  * @num: input number
  * @i: Counter variable
  * Return: int
